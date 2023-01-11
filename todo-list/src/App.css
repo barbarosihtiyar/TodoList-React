@@ -1,0 +1,37 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(48, 16, 255) 0%, rgb(100, 115, 255) 100%);
+}
+
+.App {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 5%;
+  background-color: #161a2b;
+  text-align: center;
+}
+.App .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.todoListForm .todoInput {
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  width: 300px;
+}
+.todoListForm .todoInput::-moz-placeholder {
+  color: #e2e2e2;
+}
+.todoListForm .todoInput:-ms-input-placeholder {
+  color: #e2e2e2;
+}
+.todoListForm .todoInput::placeholder {
+  color: #e2e2e2;
+}/*# sourceMappingURL=App.css.map */

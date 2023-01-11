@@ -1,0 +1,20 @@
+$fontColor : #fff;
+$placeHolder:#e2e2e2;
+$bodyBack:linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+$todoAppBack:#161a2b;
+$todoListBack:linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+
+
+@mixin font($size,$weight,$color){
+    font-size : $size;
+    font-weight:$weight;
+    color: $color
+}

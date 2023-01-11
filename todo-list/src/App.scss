@@ -1,0 +1,35 @@
+@import "variables";
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background: $bodyBack;
+}
+
+.App {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: $todoAppBack;
+    text-align: center;
+    .title {
+        @include font(24px, 600, $fontColor);
+    }
+}
+
+
+.todoListForm{
+    .todoInput{
+        color: $fontColor;
+        background-color: transparent;
+        outline: none;
+        width: 300px;
+        &::placeholder{
+            color: $placeHolder;
+        }
+    }
+}
