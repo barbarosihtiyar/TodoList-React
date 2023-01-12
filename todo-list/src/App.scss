@@ -10,26 +10,86 @@ body{
 }
 
 .App {
-    width: 400px;
+    width: 500px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 9%;
     background-color: $todoAppBack;
     text-align: center;
+    .appWrapper{
+        height: 390px;
+        overflow-wrap:break-word;
+        overflow: auto;    
+    }
     .title {
         @include font(24px, 600, $fontColor);
+        display: inline-block;
+        margin-top: 3%;
+        margin-bottom: 3%;
     }
 }
 
 
 .todoListForm{
+    form{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
     .todoInput{
         color: $fontColor;
-        background-color: transparent;
+        background: transparent;
         outline: none;
-        width: 300px;
+        width: 320px;;
+        border: 2px solid #5d0cff;        
+        border-radius: 4px 0 0 4px;
+        padding: 8px 10px;
+        @include font(12px,500,$fontColor);
         &::placeholder{
             color: $placeHolder;
         }
+    }
+    button{
+        background-color: transparent;
+        border-radius: 0 4px 4px 0;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        background: linear-gradient(
+            90deg,
+            rgba(93, 12, 255, 1) 0%,
+            rgba(155, 0, 250, 1) 100%
+          );
+          color: #fff;
+          text-transform: capitalize;
+          padding: 12px;
+          @include font(12px,500,$fontColor);
+    }
+}
+
+}
+
+
+.todoList{
+        .todoTarget{
+            background: $todoListBack;
+            padding: 10px;
+            @include font(15px,500,$fontColor);
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            width: 90%;
+            margin: 2% auto;
+            .todoSpan{
+                width: 95%;
+                display: inherit;
+            }
+            .button{
+                border: none;
+                background-color: transparent;
+                svg{
+                    cursor: pointer;
+                    color: #fff;
+                }
+                }
     }
 }

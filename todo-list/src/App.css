@@ -7,31 +7,89 @@ body {
 }
 
 .App {
-  width: 400px;
+  width: 500px;
   height: 400px;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 9%;
   background-color: #161a2b;
   text-align: center;
+}
+.App .appWrapper {
+  height: 390px;
+  overflow-wrap: break-word;
+  overflow: auto;
 }
 .App .title {
   font-size: 24px;
   font-weight: 600;
   color: #fff;
+  display: inline-block;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
-.todoListForm .todoInput {
+.todoListForm form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.todoListForm form .todoInput {
   color: #fff;
-  background-color: transparent;
+  background: transparent;
   outline: none;
-  width: 300px;
+  width: 320px;
+  border: 2px solid #5d0cff;
+  border-radius: 4px 0 0 4px;
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
 }
-.todoListForm .todoInput::-moz-placeholder {
+.todoListForm form .todoInput::-moz-placeholder {
   color: #e2e2e2;
 }
-.todoListForm .todoInput:-ms-input-placeholder {
+.todoListForm form .todoInput:-ms-input-placeholder {
   color: #e2e2e2;
 }
-.todoListForm .todoInput::placeholder {
+.todoListForm form .todoInput::placeholder {
   color: #e2e2e2;
+}
+.todoListForm form button {
+  background-color: transparent;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(90deg, rgb(93, 12, 255) 0%, rgb(155, 0, 250) 100%);
+  color: #fff;
+  text-transform: capitalize;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.todoList .todoTarget {
+  background: linear-gradient(90deg, rgb(20, 159, 255) 0%, rgb(17, 122, 255) 100%);
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 90%;
+  margin: 2% auto;
+}
+.todoList .todoTarget .todoSpan {
+  width: 95%;
+  display: inherit;
+}
+.todoList .todoTarget .button {
+  border: none;
+  background-color: transparent;
+}
+.todoList .todoTarget .button svg {
+  cursor: pointer;
+  color: #fff;
 }/*# sourceMappingURL=App.css.map */
