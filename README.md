@@ -2,11 +2,11 @@
 *E-Commerce Web Site is a React based web application.On this site, users can list their goals by entering the requests they have set as targets here.*
 
 # Features
--User text input
--Ability to remove added texts
--Arranging the texts in order
--Sass design
--Accepts texts within certain rules at user input
+- User text input
+- Ability to remove added texts
+- Arranging the texts in order
+- Sass design
+- Accepts texts within certain rules at user input
 
 # Screenshots
 
